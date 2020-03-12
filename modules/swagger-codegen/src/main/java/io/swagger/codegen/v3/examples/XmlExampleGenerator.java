@@ -8,6 +8,8 @@ import io.swagger.v3.oas.models.media.NumberSchema;
 import io.swagger.v3.oas.models.media.PasswordSchema;
 import io.swagger.v3.oas.models.media.Schema;
 import io.swagger.v3.oas.models.media.StringSchema;
+import io.swagger.v3.oas.models.media.URISchema;
+import io.swagger.v3.oas.models.media.URLSchema;
 import io.swagger.v3.oas.models.media.UUIDSchema;
 import io.swagger.v3.oas.models.media.XML;
 import io.swagger.v3.parser.util.SchemaTypeUtil;
@@ -192,6 +194,10 @@ public class XmlExampleGenerator {
         } else if (property instanceof UUIDSchema) {
             return "046b6c7f-0b8a-43b9-b35d-6489e6daee91";
         // do these last in case the specific types above are derived from these classes
+        } else if (property instanceof URISchema) {
+            return "tel:+1-816-555-1212";
+        } else if (property instanceof URLSchema) {
+            return "https://example.org";
         } else if (property instanceof StringSchema) {
             return "aeiou";
         }

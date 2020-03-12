@@ -268,6 +268,8 @@ public class CodegenConstants {
     public static final String IS_DATE_EXT_NAME = PREFIX_IS + "date";
     public static final String IS_DATE_TIME_EXT_NAME = PREFIX_IS + "date-time";
     public static final String IS_UUID_EXT_NAME = PREFIX_IS + "uuid";
+    public static final String IS_URI_EXT_NAME = PREFIX_IS + "uri";
+    public static final String IS_URL_EXT_NAME = PREFIX_IS + "url";
     public static final String IS_LIST_CONTAINER_EXT_NAME = PREFIX_IS + "list-container";
     public static final String IS_MAP_CONTAINER_EXT_NAME = PREFIX_IS + "map-container";
     public static final String IS_READ_ONLY_EXT_NAME = PREFIX_IS + "read-only";
